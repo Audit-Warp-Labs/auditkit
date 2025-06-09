@@ -115,13 +115,43 @@ This repo includes GitHub Actions support for:
 
 ```bash
 /
-├── pipelines/          # Shell, JS, Python automation for audits
-├── prompts/            # AI model prompts for static analysis
-├── examples/           # Sample contracts and audit inputs
-├── ai-audits/          # Logs + outputs from AI engines
-├── bytecode/           # Bytecode inspection tools and results
-├── docs/               # Internal docs and flow diagrams
-└── .github/workflows/  # CI/CD rules and security scans
+│   README.md
+│
+├───common_utils
+│       json_utils.py
+│       sui_api.py
+│       type_utils.py
+│
+├───notebooks
+│       pipeline_1_analysis.ipynb
+│       pipeline_2_analysis.ipynb
+│       pipeline_3_analysis.ipynb
+│
+├───pipeline_1_onchain_json
+│       abi_visualizer.py
+│       capability_analyzer.py
+│       entry_function_audit.py
+│       json_parser.py
+│       ownership_checker.py
+│       README.md
+│
+├───pipeline_2_move_source
+│       capability_usage_scan.py
+│       formal_verifier_stub.py
+│       function_graph.py
+│       linter.py
+│       parser.py
+│       README.md
+│       resource_usage.py
+│       source_ownership_analysis.py
+│       spec_checker.py
+│       static_linter.py
+│
+└───pipeline_3_bytecode_disassembly
+        bytecode_loader.py
+        control_flow_mapper.py
+        disassembly_parser.py
+        README.md
 ```
 
 ---
